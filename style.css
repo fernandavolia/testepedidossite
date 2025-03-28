@@ -140,3 +140,97 @@ input[type="number"] {
     flex-wrap: wrap; /* Permitindo que os itens se ajustem em várias linhas se necessário */
     gap: 20px; /* Aumentando o espaço entre os elementos */
 }
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    #login-screen {
+        width: 90%;
+    }
+
+    #pedido-screen {
+        width: 90%;
+    }
+
+    /* Ajustando os campos de entrada e botões */
+    input, button {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .imagem-container {
+        margin-bottom: 15px;
+    }
+
+    .logo-imagem {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    .legenda {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* Ajustes na parte de montar o pedido */
+    .container-montar-pedido {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .montar-pedido {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    input, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .container-montar-pedido {
+        padding: 10px;
+    }
+
+    .logo-imagem {
+        width: 70%;
+        max-width: 200px;
+    }
+
+    .legenda {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
