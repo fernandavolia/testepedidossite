@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montar Pedido</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Tela de login -->
+    <div id="login-screen">
+        <div class="imagem-container">
+            <img src="logotipo-branco-03-1536x856.png" alt="Logo" class="logo-imagem" />
+            <p class="legenda titulo">Seja bem-vindo, lojista oficial Vòlia!</p>
+            <p class="legenda cidade"><strong>Espírito Santo - Brasil</strong></p>
+        </div>
+        <input type="password" id="password" placeholder="Digite a senha" />
+        <button onclick="checkPassword()">Entrar</button>
+    </div>
+    
+    
+
+    <!-- Tela de pedidos -->
+    <div id="pedido-screen" class="hidden">
+        <h2>Montar Pedido</h2>
+        <input type="text" id="cliente" placeholder="Digite o nome do cliente" />
+        <div id="categorias-container"></div>
+        <h3>Total: R$ <span id="total">0.00</span></h3>
+        <button onclick="gerarPedido()">Gerar Pedido</button>
+        <div id="pedido-final"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

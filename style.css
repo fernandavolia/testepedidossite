@@ -1,0 +1,142 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f4c2ff, #d08aff);
+    color: #4a0072;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Tela de login com fundo rosa */
+#login-screen {
+    background: #e91e63; /* Rosa bem forte para o container de login */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Tela de pedidos com fundo branco */
+#pedido-screen {
+    background: white; /* Fundo branco para a tela de montar pedidos */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+input, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #9c27b0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7b1fa2;
+}
+
+table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #a05bcf;
+    color: white;
+}
+
+input[type="number"] {
+    width: 60px;
+}
+
+/* Cor vermelha para produtos indisponíveis */
+.indisponivel {
+    color: red;
+    font-weight: bold;
+}
+
+/* Estilos para a imagem e legenda */
+.imagem-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-imagem {
+    width: 300px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+}
+
+.legenda {
+    font-size: 18px;
+    font-weight: normal;
+    color: white; /* Cor branca para as legendas */
+}
+
+.titulo {
+    font-size: 28px; /* Tamanho maior para o título */
+    font-weight: bold; /* Em negrito */
+}
+
+.cidade {
+    font-size: 20px; /* Tamanho da legenda da cidade */
+    font-weight: bold; /* Em negrito */
+}
+/* Ajustando o tamanho da fonte para a parte de montar o pedido */
+.montar-pedido {
+    font-size: 14px; /* Diminuindo o tamanho da fonte */
+}
+
+/* Ajustando a largura da quantidade mínima */
+.quantidade-minima {
+    width: 80px; /* Diminui a largura para dar mais espaço para o nome do produto */
+}
+
+/* Ajustando a largura da coluna de produtos para evitar quebras */
+.produto-nome {
+    width: auto; /* Deixe a largura do nome do produto ocupar o espaço restante */
+    white-space: nowrap; /* Impede quebras de linha no nome do produto */
+    overflow: hidden; /* Oculta o texto que ultrapassar o limite */
+    text-overflow: ellipsis; /* Exibe "..." quando o texto ultrapassar o limite */
+}
+
+/* Aumentando o tamanho do container de montar pedidos */
+.container-montar-pedido {
+    width: 90%; /* Aumentando a largura do container */
+    max-width: 1200px; /* Definindo um limite máximo de largura */
+    margin: 0 auto; /* Centralizando o container */
+    padding: 20px; /* Adicionando um pouco de espaço interno */
+    box-sizing: border-box; /* Garantindo que o padding não afete a largura total */
+}
+
+/* Aumentando a altura do container para dar mais espaço vertical */
+.container-montar-pedido {
+    min-height: 500px; /* Aumenta a altura mínima do container */
+}
+
+/* Ajustando o espaçamento interno dos elementos dentro do container */
+.montar-pedido {
+    display: flex;
+    flex-wrap: wrap; /* Permitindo que os itens se ajustem em várias linhas se necessário */
+    gap: 20px; /* Aumentando o espaço entre os elementos */
+}
